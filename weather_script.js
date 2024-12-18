@@ -4,7 +4,7 @@ const apiKey = 'c7c51bb77d9018aa3141d03ab118a940';
 const city = 'London';
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-fetch(url)c7c51bb77d9018aa3141d03ab118a940
+fetch(url)
 
     .then(response => response.json())
     .then(data => {
