@@ -13,7 +13,7 @@ def main():
       n = int(input("Enter the number of elements (1-100): "))
       if not 1 <= n <= MAX:
             print("Invalid input. Please provide a digit ranging from 1 to 100.")
-            exit(1)
+            return
 
       arr = []
 
