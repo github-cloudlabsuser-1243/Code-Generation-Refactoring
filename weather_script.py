@@ -16,7 +16,10 @@ def get_weather(api_key, city):
         return None
 
 if __name__ == "__main__":
-    api_key = "c7c51bb77d9018aa3141d03ab118a940"
+    import os
+    api_key = os.getenv("c7c51bb77d9018aa3141d03ab118a940")
+    if not api_key:
+        raise ValueError("No API key found. Please set the OPENWEATHER_API_KEY environment variable.")
     city = "London"
     weather_data = get_weather(api_key, city)
     if weather_data:
